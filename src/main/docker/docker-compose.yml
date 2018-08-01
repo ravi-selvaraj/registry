@@ -1,9 +1,29 @@
-idhayangal_db:
-   image: postgres:10.4
-   container_name: idhayangal_db
-   ports:
-      - '54321:5432'
-   environment:
-      POSTGRES_USER: 'idhayangal'
-      POSTGRES_PASSWORD: 'Secre!Sauc3'
-      POSTGRES_DB: 'idhayangaldb'
+version: '2'
+services:
+   idhayangal_db:
+      image: postgres:10.4
+      container_name: idhayangal_db
+      ports:
+         - '54321:5432'
+      environment:
+         POSTGRES_USER: 'idhayangal'
+         POSTGRES_PASSWORD: 'Secre!Sauc3'
+         POSTGRES_DB: 'idhayangaldb'
+      volumes:
+         - /idhayangal/registry/src/main/db/create_tables.sql:/docker-entrypoint-initdb.d/init.sql
+
+   maven:
+      image: maven:3.5.4-jdk-8
+      container_name: maven
+      volumes:
+         - /idhayangal:/apps
+      command: tail -f /dev/null
+
+   tomcat:
+      image: tomcat:7.0.88-jre8
+      container_name: tomcat
+      network_mode: "host"
+      ports:
+         - '80:8080'
+      volumes:
+         - /idhayangal:/apps
