@@ -133,7 +133,8 @@ function save_patientrecord(record)
 		patient_data["patient_id"] = patient_id;
 	patient_data["patient_name"] = record["name"];
 	patient_data["patient_city"] = record["address"]["city"]
-	patient_data["patient_dob"] = record["dob"];
+	patient_data["patient_phone"] = record["phone"];
+	patient_data["patient_dob"] = record["date_of_birth"];
 	patient_data["patient_year_of_diagnosis"] = record["year_of_diagnosis"];
 	patient_data["patient_tags"] = "";
 
