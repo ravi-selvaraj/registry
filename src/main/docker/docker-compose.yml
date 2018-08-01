@@ -1,0 +1,9 @@
+idhayangal_db:
+   image: postgres:10.4
+   container_name: idhayangal_db
+   ports:
+      - '54321:5432'
+   environment:
+      POSTGRES_USER: 'idhayangal'
+      POSTGRES_PASSWORD: 'Secre!Sauc3'
+      POSTGRES_DB: 'idhayangaldb'
