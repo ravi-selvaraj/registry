@@ -506,6 +506,7 @@ public class SchemaHandler {
 			"               \"placeholder\":\"\"\n" + 
 			"            },\n" + 
 			"            \"phone\",\n" + 
+			"            \"email\",\n" + 
 			"            \"date_of_birth\",\n" + 
 			"            {\n" + 
 			"               \"key\":\"gender\",\n" + 
