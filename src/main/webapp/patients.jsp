@@ -161,7 +161,7 @@ input:focus {
         <th class="item" style="width: 200px"><b>City</b></th>
         <th class="item" style="width: 200px"><b>Phone</b></th>
         <th class="item" style="width: 200px"><b>Year of Diagnosis</b></th>
-        <th class="item" style="width: 200px"><b>Tags</b></th>
+        <th class="item" style="width: 200px"><b>Consultant Name</b></th>
         <th class="item" style="width: 60px"><b></b></th>
       </tr>
       </tbody>

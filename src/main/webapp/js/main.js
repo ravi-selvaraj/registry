@@ -20,7 +20,7 @@ function load_patientrecords() {
 						str += '<td class="item tccity">' + tc_data.patient_city + '</td>';	
 						str += '<td class="item tcphone">' + tc_data.patient_phone + '</td>';	
 						str += '<td class="item tcyod">' + tc_data.patient_year_of_diagnosis + '</td>';	
-						str += '<td class="item tctags">' + tc_data.patient_tags + '</td>';	
+						str += '<td class="item tctags">' + tc_data.consultant_name + '</td>';	
 						str += '<td class="item tcedit"><a target=_blank href="./patient.jsp?id=' + tc_data.patient_id + '" class="btn btn-sm btn-primary" id="newtestcase">Edit&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-pencil"></span></a></td>';
 						str += '</tr>';
 						$(".list").append(
