@@ -606,6 +606,11 @@ public class SchemaHandler {
 			"                  \"favourite_food_or_snaks_at_diagnosis[]\"\n" + 
 			"               ]\n" + 
 			"            }\n" + 
+			"            \"time_spent_with_electronics\",\n" + 
+			"            {\n" + 
+			"               \"key\":\"types_of_electronics\",\n" + 
+			"               \"type\":\"checkboxes\"\n" + 
+			"            }\n" + 
 			"         ]\n" + 
 			"      },\n" + 
 			"      {\n" + 
