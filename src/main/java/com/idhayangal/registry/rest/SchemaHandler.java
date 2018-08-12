@@ -167,7 +167,7 @@ public class SchemaHandler {
 			"      },\n" + 
 			"      \"family_history_of_diabetes\":{\n" + 
 			"         \"type\":\"string\",\n" + 
-			"         \"title\":\"Family History of Diabetes\",\n" + 
+			"         \"title\":\"Family History of Type 1 Diabetes\",\n" + 
 			"         \"enum\":[\n" + 
 			"            \"yes\",\n" + 
 			"            \"no\"\n" + 
