@@ -199,6 +199,19 @@ public class SchemaHandler {
 			"            \"title\":\"Favourite Food or Snacks at Diagnosis\"\n" + 
 			"         }\n" + 
 			"      },\n" + 
+			"      \"time_spent_with_electronics\":{\n" + 
+			"         \"type\":\"string\",\n" + 
+			"         \"title\":\"Total time spent with Electronics per day\"\n" + 
+			"      },\n" + 
+			"      \"types_of_electronics\":{\n" + 
+			"         \"type\":\"array\",\n" + 
+			"         \"title\":\"Types of Electronics\",\n" + 
+			"		  \"items\":{\n" +	
+			"		       \"type\":\"string\",\n" +	
+			"				\"enum\":[\"TV\", \"Computer/Laptops\", \"Tablets\", \"Smartphones\", \"Video Games\"]}" +
+			"      },\n" + 
+						
+			
 			"      \"total_daily_dose_of_insulin\":{\n" + 
 			"         \"type\":\"string\",\n" + 
 			"         \"title\":\"Total daily dose of Insulin\"\n" + 
