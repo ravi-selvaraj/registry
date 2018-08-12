@@ -676,7 +676,7 @@ public class SchemaHandler {
 			"                     \"visits[].is_patient_undergoing_dialysis\",\n" + 
 			"                     \"visits[].retinal_examination\",\n" + 
 			"                     \"visits[].laser_treatment_for_retinopathy\",\n" + 
-			"                     \"visits[].foot_urcer\",\n" + 
+			"                     \"visits[].foot_ulcer\",\n" + 
 			"                     \"visits[].foot_amputation\",\n" + 
 			"                     \"visits[].cardiovascular_problems\",\n" + 
 			"                     \"visits[].details_of_cardiovascular_problems\",\n" + 
