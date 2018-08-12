@@ -72,6 +72,10 @@ public class SchemaHandler {
 			"         \"type\":\"string\",\n" + 
 			"         \"title\":\"Phone\"\n" + 
 			"      },\n" + 
+			"      \"email\":{\n" + 
+			"         \"type\":\"string\",\n" + 
+			"         \"title\":\"E-Mail Id\"\n" + 
+			"      },\n" + 
 			"      \"date_of_birth\":{\n" + 
 			"         \"type\":\"string\",\n" + 
 			"         \"title\":\"Date of Birth\"\n" + 
@@ -95,7 +99,7 @@ public class SchemaHandler {
 			"      },\n" + 
 			"      \"annual_income\":{\n" + 
 			"         \"type\":\"string\",\n" + 
-			"         \"title\":\"Annual Income\"\n" + 
+			"         \"title\":\"Annual Income in Rupees\"\n" + 
 			"      },\n" + 
 			"      \"home_refridgerator\":{\n" + 
 			"         \"type\":\"string\",\n" + 
@@ -171,7 +175,7 @@ public class SchemaHandler {
 			"      },\n" + 
 			"      \"family_history_details\":{\n" + 
 			"         \"type\":\"string\",\n" + 
-			"         \"title\":\"Family History Details\"\n" + 
+			"         \"title\":\"If Yes, Family History Details\"\n" + 
 			"      },\n" + 
 			"      \"factories_or_industries_nearby\":{\n" + 
 			"         \"type\":\"string\",\n" + 
@@ -307,7 +311,7 @@ public class SchemaHandler {
 			"      },\n" + 
 			"      \"is_the_child_or_parent_supported_by_idhayangal_charitable_trust\":{\n" + 
 			"         \"type\":\"string\",\n" + 
-			"         \"title\":\"Is the child or parent supported by Idhayangal Charitable Trust\",\n" + 
+			"         \"title\":\"Were you supported during pregnancy with Idhayangal Charitable Trust\",\n" + 
 			"         \"enum\":[\n" + 
 			"            \"yes\",\n" + 
 			"            \"no\"\n" + 
@@ -400,9 +404,9 @@ public class SchemaHandler {
 			"                     \"no\"\n" + 
 			"                  ]\n" + 
 			"               },\n" + 
-			"               \"foot_urcer\":{\n" + 
+			"               \"foot_ulcer\":{\n" + 
 			"                  \"type\":\"string\",\n" + 
-			"                  \"title\":\"Foot Urcer\",\n" + 
+			"                  \"title\":\"Foot Ulcer\",\n" + 
 			"                  \"enum\":[\n" + 
 			"                     \"yes\",\n" + 
 			"                     \"no\"\n" + 
@@ -558,7 +562,7 @@ public class SchemaHandler {
 			"      {\n" + 
 			"         \"type\":\"fieldset\",\n" + 
 			"         \"id\":\"diabetes_influencing_factors\",\n" + 
-			"         \"title\":\"Diabetes Influncing Factors\",\n" + 
+			"         \"title\":\"Diabetes Influencing Factors\",\n" + 
 			"         \"expandable\":false,\n" + 
 			"         \"items\":[\n" + 
 			"            {\n" + 
