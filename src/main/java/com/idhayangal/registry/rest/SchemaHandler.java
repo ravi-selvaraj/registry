@@ -206,7 +206,7 @@ public class SchemaHandler {
 			"      },\n" + 
 			"      \"time_spent_with_electronics\":{\n" + 
 			"         \"type\":\"string\",\n" + 
-			"         \"title\":\"Total time spent with Electronics per day\"\n" + 
+			"         \"title\":\"Total time spent with Electronics per day (in hours)\"\n" + 
 			"      },\n" + 
 			"      \"types_of_electronics\":{\n" + 
 			"         \"type\":\"array\",\n" + 
