@@ -36,12 +36,12 @@ public class SchemaHandler {
 			"      \"consultant_name\":{\n" + 
 			"         \"type\":\"string\",\n" + 
 			"         \"title\":\"Consultant Name\",\n" + 
-			"         \"required\":true\n" + 
+			//"         \"required\":true\n" + 
 			"      },\n" + 
 			"      \"name\":{\n" + 
 			"         \"type\":\"string\",\n" + 
 			"         \"title\":\"Name\",\n" + 
-			"         \"required\":true\n" + 
+			//"         \"required\":true\n" + 
 			"      },\n" + 
 			"      \"address\":{\n" + 
 			"         \"type\":\"object\",\n" + 
@@ -49,7 +49,7 @@ public class SchemaHandler {
 			"            \"address_line_1\":{\n" + 
 			"               \"type\":\"string\",\n" + 
 			"               \"title\":\"Address\",\n" + 
-			"               \"required\":true\n" + 
+			//"               \"required\":true\n" + 
 			"            },\n" + 
 			"            \"address_line_2\":{\n" + 
 			"               \"type\":\"string\",\n" + 
