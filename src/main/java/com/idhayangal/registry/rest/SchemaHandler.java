@@ -605,7 +605,7 @@ public class SchemaHandler {
 			"               \"items\":[\n" + 
 			"                  \"favourite_food_or_snaks_at_diagnosis[]\"\n" + 
 			"               ]\n" + 
-			"            }\n" + 
+			"            },\n" + 
 			"            \"time_spent_with_electronics\",\n" + 
 			"            {\n" + 
 			"               \"key\":\"types_of_electronics\",\n" + 
