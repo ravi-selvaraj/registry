@@ -33,6 +33,11 @@ public class SchemaHandler {
 
 	static final String schema = "{\n" + 
 			"   \"schema\":{\n" + 
+			"      \"consultant_name\":{\n" + 
+			"         \"type\":\"string\",\n" + 
+			"         \"title\":\"Consultant Name\",\n" + 
+			"         \"required\":true\n" + 
+			"      },\n" + 
 			"      \"name\":{\n" + 
 			"         \"type\":\"string\",\n" + 
 			"         \"title\":\"Name\",\n" + 
@@ -461,6 +466,7 @@ public class SchemaHandler {
 			"      }\n" + 
 			"   },\n" + 
 			"   \"form\":[\n" + 
+			"      \"consultant_name\"," +
 			"      {\n" + 
 			"         \"type\":\"fieldset\",\n" + 
 			"         \"id\":\"personal_information\",\n" + 
