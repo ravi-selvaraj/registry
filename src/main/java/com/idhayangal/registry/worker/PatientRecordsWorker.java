@@ -50,7 +50,7 @@ public class PatientRecordsWorker {
 			try
 			{
 				stmt = connection.createStatement();
-				String sql = "SELECT patient_id, patient_record, patient_name, patient_dob, patient_city, patient_year_of_diagnosis, patient_phone, patient_record->'consultant_name' as \"consultant_name\", patient_tags from patient_records";
+				String sql = "SELECT patient_id, patient_record, patient_name, patient_dob, patient_city, patient_year_of_diagnosis, patient_phone, patient_record->'patient_record'->'consultant_name' as \"consultant_name\", patient_tags from patient_records";
 				if (tags != null)
 				{
 					sql += " where patient_record->\'tags\' @> ALL (ARRAY [";
