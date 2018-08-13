@@ -81,14 +81,19 @@ function load_patientrecord(patient_id) {
 				type : 'GET',
 				success : function(data) {
 					
-					
+					data["displayErrors"] = function (errors, formElt) {
+								    for (var i=0; i<errors.length; i++) {
+								      errors[i].message = "<font color='red'>This is a required field. Please enter the value.</font>";
+								    }
+								    $('form').jsonFormErrors(errors, data);
+								  }
 					data["onSubmit"] = function (errors, values) {
 				        if (errors) {
-				            alert("Some error in the form. Please fix the record and try again");
+				           alert("Some error in the form. Please fix the record and try again");
 				          } else {
 				            save_patientrecord(values);
 				          }
-				        };
+				        }; 
 				    if (patient_id)
 				    	{
 				    		load_patientrecorddata(data);
@@ -132,7 +137,9 @@ function save_patientrecord(record)
 	if (patient_id)
 		patient_data["patient_id"] = patient_id;
 	patient_data["patient_name"] = record["name"];
-	patient_data["patient_city"] = record["address"]["city"]
+	patient_data["patient_city"] = "N/A";
+	if (record["address"])
+		patient_data["patient_city"] = record["address"]["city"];
 	patient_data["patient_phone"] = record["phone"];
 	patient_data["patient_dob"] = record["date_of_birth"];
 	patient_data["patient_year_of_diagnosis"] = record["year_of_diagnosis"];
@@ -153,6 +160,7 @@ function save_patientrecord(record)
 				$("#msg_header").html("Success");
 				$("#msg_body").html("Success : Patient record " + data["patient_id"] + " saved successfully.");
 				$("#alert").click();
+				patient_id = data["patient_id"];
 		},
 		error : function(request, error) {
 			$("#doneprocessing").click();
