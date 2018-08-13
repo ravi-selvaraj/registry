@@ -49,7 +49,7 @@ public class SchemaHandler {
 			"            \"address_line_1\":{\n" + 
 			"               \"type\":\"string\",\n" + 
 			"               \"title\":\"Address\",\n" + 
-			"               \"required\":true\n" + 
+			"               \"required\":false\n" + 
 			"            },\n" + 
 			"            \"address_line_2\":{\n" + 
 			"               \"type\":\"string\",\n" + 
@@ -61,15 +61,15 @@ public class SchemaHandler {
 			"            },\n" + 
 			"            \"city\":{\n" + 
 			"               \"type\":\"string\",\n" + 
-			"               \"required\":true\n" + 
+			"               \"required\":false\n" + 
 			"            },\n" + 
 			"            \"state\":{\n" + 
 			"               \"type\":\"string\",\n" + 
-			"               \"required\":true\n" + 
+			"               \"required\":false\n" + 
 			"            },\n" + 
 			"            \"pincode\":{\n" + 
 			"               \"type\":\"string\",\n" + 
-			"               \"required\":true\n" + 
+			"               \"required\":false\n" + 
 			"            }\n" + 
 			"         }\n" + 
 			"      },\n" + 
@@ -344,7 +344,7 @@ public class SchemaHandler {
 			"               \"date_of_visit\":{\n" + 
 			"                  \"type\":\"string\",\n" + 
 			"                  \"title\":\"Date of Visit\",\n" + 
-			"                  \"required\":true\n" + 
+			"                  \"required\":false\n" + 
 			"               },\n" + 
 			"               \"months_since_diagnosis\":{\n" + 
 			"                  \"type\":\"string\",\n" + 
