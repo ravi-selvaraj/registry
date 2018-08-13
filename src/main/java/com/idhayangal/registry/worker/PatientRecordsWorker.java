@@ -50,7 +50,7 @@ public class PatientRecordsWorker {
 			try
 			{
 				stmt = connection.createStatement();
-				String sql = "SELECT patient_id, patient_record, patient_name, patient_dob, patient_city, patient_year_of_diagnosis, patient_phone, patient_tags from patient_records";
+				String sql = "SELECT patient_id, patient_record, patient_name, patient_dob, patient_city, patient_year_of_diagnosis, patient_phone, patient_record->'consultant_name' as \"consultant_name\", patient_tags from patient_records";
 				if (tags != null)
 				{
 					sql += " where patient_record->\'tags\' @> ALL (ARRAY [";
@@ -71,6 +71,7 @@ public class PatientRecordsWorker {
 					tc.patient_city = rs.getString("patient_city").trim();
 					tc.patient_dob = rs.getString("patient_dob").trim();
 					tc.patient_phone = rs.getString("patient_phone").trim();
+					tc.consultant_name = rs.getString("consultant_name").trim();
 					tc.patient_tags = rs.getString("patient_tags").trim();
 					tc.patient_year_of_diagnosis = rs.getString("patient_year_of_diagnosis").trim();
 					tc.patient_record = (JSONObject) parser.parse(rs.getString("patient_record").trim());

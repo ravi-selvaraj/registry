@@ -12,6 +12,7 @@ public class PatientRecord {
 	public String patient_city;
 	public String patient_year_of_diagnosis;
 	public String patient_phone;
+	public String consultant_name;
 	public String patient_tags;
 
 	public Map patient_record = new HashMap();
@@ -28,6 +29,7 @@ public class PatientRecord {
 		this.patient_city = source.patient_city;
 		this.patient_year_of_diagnosis = source.patient_year_of_diagnosis;
 		this.patient_phone = source.patient_phone;
+		this.consultant_name = source.consultant_name;
 		this.patient_tags = source.patient_tags;
 		
 		this.patient_record = new HashMap(source.patient_record);
