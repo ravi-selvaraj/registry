@@ -9,26 +9,49 @@
 <meta http-equiv="Content-Language" content="en">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet"
+<link rel="stylesheet" href="js/deps/opt/bootstrap.css">
+<link rel="stylesheet" href="js/deps/opt/bootstrap-wysihtml5.css">
+<link rel="stylesheet" href="js/deps/opt/spectrum.css">
+<!-- <link rel="stylesheet"
 	href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
+ -->
 
 <script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	src="js/deps/jquery.min.js"></script>
+
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-
-<script src="js/main.js"></script>
+<!-- 
 <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+ -->
+    <script type="text/javascript" src="js/deps/underscore.js"></script>
+    <script type="text/javascript" src="js/deps/opt/jsv.js"></script>
+    
+        <script src="js/deps/jquery.min.js"></script>
+    <script src="js/deps/underscore.js"></script>
+    <script src="js/deps/opt/jsv.js"></script>
+    <script src="js/deps/opt/jquery.ui.core.js"></script>
+    <script src="js/deps/opt/jquery.ui.widget.js"></script>
+    <script src="js/deps/opt/jquery.ui.mouse.js"></script>
+    <script src="js/deps/opt/jquery.ui.sortable.js"></script>
+    <script src="js/deps/opt/bootstrap-dropdown.js"></script>
+    <script src="js/deps/opt/bootstrap-wysihtml5.js"></script>
+    <script src="js/deps/opt/spectrum.js"></script>
+    <script src="js/deps/opt/ace/ace.js"></script>
+    <script src="js/deps/opt/ace/mode-json.js"></script>
+    <script src="js/deps/opt/ace/mode-html.js"></script>
+    <script src="js/deps/opt/ace/mode-css.js"></script>
+    <script src="js/deps/opt/ace/mode-javascript.js"></script>
+    <script src="js/deps/opt/ace/mode-less.js"></script>
+    <script src="js/deps/opt/ace/mode-markdown.js"></script>
+    <script src="js/deps/opt/jquery.transloadit2.js"></script>
+    
+    <script type="text/javascript" src="js/lib/jsonform.js"></script>
+<script src="js/main.js"></script>
 
-    <script type="text/javascript" src="js/underscore.js"></script>
-    <script type="text/javascript" src="js/jsv.js"></script>
-    <script type="text/javascript" src="js/jsonform.js"></script>
     
 <style type="text/css">
 .list {
@@ -151,6 +174,47 @@ legend {
 .input-group-addon {
 	width: 150px;
 }
+
+      .tagline {
+        padding: 10px;
+        font-weight: 200;
+        margin-top: -1em;
+      }
+
+      .footer {
+        margin-top: 40px;
+        padding: 10px 0.5em;
+        border-top: 1px solid #E5E5E5;
+      }
+
+      #form .add-on {
+        border: none;
+        background-color: inherit;
+      }
+
+      .expandable > legend:before {
+        content: '\25B8';
+        padding-right: 5px;
+      }
+      .expanded > legend:before {
+        content: '\25BE';
+      }
+
+      ._jsonform-array-buttons {
+        margin-left: 25px;
+      }
+
+      .jsonform-required > label:after {
+        content: ' *';
+        color: red;
+      }
+
+      form.jsonform-hasrequired:after {
+        content: '* Required field';
+        display: block;
+        color: red;
+        padding-top: 1em;
+      }
 </style>
 
 </head>
