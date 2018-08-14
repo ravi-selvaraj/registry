@@ -6,9 +6,9 @@ services:
       ports:
          - '54321:5432'
       environment:
-         POSTGRES_USER: 'idhayangal'
-         POSTGRES_PASSWORD: 'Secre!Sauc3'
-         POSTGRES_DB: 'idhayangaldb'
+         POSTGRES_USER: 'XXXXX'
+         POSTGRES_PASSWORD: 'XXXXX'
+         POSTGRES_DB: 'XXXXX'
       volumes:
          - /idhayangal/registry/src/main/db/create_tables.sql:/docker-entrypoint-initdb.d/init.sql
 
@@ -25,5 +25,11 @@ services:
       network_mode: "host"
       ports:
          - '80:8080'
+      environment:
+         DB: 'XXXXX'
+         DBHOST: 'XXXXX'
+         DBPORT: 'XXXXX'
+         DBUSER: 'XXXXX'
+         DBPASS: 'XXXXX'
       volumes:
          - /idhayangal:/apps

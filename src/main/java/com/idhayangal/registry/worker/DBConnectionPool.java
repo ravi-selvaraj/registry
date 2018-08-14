@@ -12,11 +12,11 @@ public class DBConnectionPool {
 
 	private static BasicDataSource connectionPool;
 	
-	public static final String default_dbhost = "localhost";
-	public static final String default_dbport = "54321";
-	public static final String default_user = "idhayangal";
-	public static final String default_pass = "Secre!Sauc3";
-	public static final String default_db = "idhayangaldb";
+	public static final String default_dbhost = "XXXXX";
+	public static final String default_dbport = "XXXXX";
+	public static final String default_user = "XXXXX";
+	public static final String default_pass = "XXXXX";
+	public static final String default_db = "XXXXX";
 
 	private static String load_env(String key, String default_val)
 	{
