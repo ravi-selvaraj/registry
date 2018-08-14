@@ -234,7 +234,7 @@ input:focus {
 			<!-- Modal content-->
 			<div class="modal-content">
 				<div class="modal-header">
-					<h4 class="modal-title">Executing the Step...</h4>
+					<h4 class="modal-title">Loading...</h4>
 				</div>
 				<div class="modal-body">
 					<p align="center">
