@@ -204,6 +204,10 @@ public class SchemaHandler {
 			"            \"title\":\"Favourite Food or Snacks at Diagnosis\"\n" + 
 			"         }\n" + 
 			"      },\n" + 
+			"      \"time_spent_in_physical_activities\":{\n" + 
+			"         \"type\":\"string\",\n" + 
+			"         \"title\":\"Total time spent in Physical Activities per day (in hours)\"\n" + 
+			"      },\n" + 
 			"      \"time_spent_with_electronics\":{\n" + 
 			"         \"type\":\"string\",\n" + 
 			"         \"title\":\"Total time spent with Electronics per day (in hours)\"\n" + 
@@ -612,6 +616,7 @@ public class SchemaHandler {
 			"                  \"favourite_food_or_snaks_at_diagnosis[]\"\n" + 
 			"               ]\n" + 
 			"            },\n" + 
+			"            \"time_spent_in_physical_activities\",\n" + 
 			"            \"time_spent_with_electronics\",\n" + 
 			"            {\n" + 
 			"               \"key\":\"types_of_electronics\",\n" + 
