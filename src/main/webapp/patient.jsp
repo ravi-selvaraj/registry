@@ -126,40 +126,46 @@ input:focus {
   padding:10px; 
 }
 
-#personal_information {
+#patient_demographics {
    background-color: aliceblue; 
    padding: 10px;
 }
 
-#initial_diagnosis_details {
+#parents_details {
    background-color: antiquewhite; 
    padding: 10px;
 }
 
-#diabetes_influencing_factors {
+#social_factors {
    background-color: gainsboro; 
    padding: 10px;
 }
 
-#insulin_details {
+#personal_habbits {
    background-color: lightyellow; 
    padding: 10px;
 }
 
-#hospitalization_details {
+#patient_birth_details {
    background-color: seashell; 
    padding: 10px;
 }
 
-#pregnancy_details {
+#initial_diagnosis_details {
    background-color: palegoldenrod; 
    padding: 10px;
 }
 
-#visits {
+#hospitaliztion_details {
    background-color: beige; 
    padding: 10px;
 }
+
+#visits {
+   background-color: lavendar; 
+   padding: 10px;
+}
+
 
 legend {
 	background-color: darkgreen;
