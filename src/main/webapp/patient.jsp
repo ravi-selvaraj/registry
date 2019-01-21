@@ -141,7 +141,7 @@ input:focus {
    padding: 10px;
 }
 
-#personal_habbits {
+#personal_habits {
    background-color: lightyellow; 
    padding: 10px;
 }
@@ -162,7 +162,7 @@ input:focus {
 }
 
 #visits {
-   background-color: lavendar; 
+   background-color: lavender; 
    padding: 10px;
 }
 
@@ -270,12 +270,13 @@ legend {
 		<div class="w3-sidebar w3-bar-block w3-light-grey w3-card"
 			style="width: 260px; position: absolute !important; height: 68%; padding: 5px; overflow: scroll">
 			<br><br>
-<a href="#personal_information" style="width:95%; text-align: left; margin: 2px;" class="btn btn-med btn-success"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;&nbsp;Personal Information</a>
-<a href="#initial_diagnosis_details" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-time"></span>&nbsp;&nbsp;&nbsp;&nbsp;Initial Diagnosis Details</a>
-<a href="#diabetes_influencing_factors" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-globe"></span>&nbsp;&nbsp;&nbsp;&nbsp;Diabetes Influencing Factors</a>
-<a href="#insulin_details" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-th-list"></span>&nbsp;&nbsp;&nbsp;&nbsp;Insulin details</a>
-<a href="#hospitalization_details" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;&nbsp;&nbsp;Hospitalization details</a>
-<a href="#pregnancy_details" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;&nbsp;&nbsp;Pregnancies Details</a>
+<a href="#patient_demographics" style="width:95%; text-align: left; margin: 2px;" class="btn btn-med btn-success"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;&nbsp;Patient Demographics</a>
+<a href="#initial_diagnosis_details" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-time"></span>&nbsp;&nbsp;&nbsp;&nbsp;Parents Details</a>
+<a href="#diabetes_influencing_factors" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-globe"></span>&nbsp;&nbsp;&nbsp;&nbsp;Social Factors</a>
+<a href="#insulin_details" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-th-list"></span>&nbsp;&nbsp;&nbsp;&nbsp;Personal Habits</a>
+<a href="#hospitalization_details" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;&nbsp;&nbsp;Patient Birth Details</a>
+<a href="#pregnancy_details" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;&nbsp;&nbsp;Initial Diagnosis Details</a>
+<a href="#pregnancy_details" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;&nbsp;&nbsp;Hospitalization Details</a>
 <hr style="margin-top:5px; margin-bottom: 5px">
 <big><b>&nbsp</b></big>
 <br>
