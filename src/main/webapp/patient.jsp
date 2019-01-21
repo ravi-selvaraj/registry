@@ -270,13 +270,13 @@ legend {
 		<div class="w3-sidebar w3-bar-block w3-light-grey w3-card"
 			style="width: 260px; position: absolute !important; height: 68%; padding: 5px; overflow: scroll">
 			<br><br>
-<a href="#patient_demographics" style="width:95%; text-align: left; margin: 2px;" class="btn btn-med btn-success"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;&nbsp;Patient Demographics</a>
-<a href="#initial_diagnosis_details" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-time"></span>&nbsp;&nbsp;&nbsp;&nbsp;Parents Details</a>
-<a href="#diabetes_influencing_factors" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-globe"></span>&nbsp;&nbsp;&nbsp;&nbsp;Social Factors</a>
-<a href="#insulin_details" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-th-list"></span>&nbsp;&nbsp;&nbsp;&nbsp;Personal Habits</a>
-<a href="#hospitalization_details" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-plus"></span>&nbsp;&nbsp;&nbsp;&nbsp;Patient Birth Details</a>
-<a href="#pregnancy_details" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;&nbsp;&nbsp;Initial Diagnosis Details</a>
-<a href="#pregnancy_details" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;&nbsp;&nbsp;Hospitalization Details</a>
+<a href="#patient_demographics" style="width:95%; text-align: left; margin: 2px;" class="btn btn-med btn-success"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;&nbsp;&nbsp;Patient Demographics</a>
+<a href="#parents_details" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-th-list"></span>&nbsp;&nbsp;&nbsp;&nbsp;Parents Details</a>
+<a href="#social_factors" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-globe"></span>&nbsp;&nbsp;&nbsp;&nbsp;Social Factors</a>
+<a href="#personal_habbits" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;&nbsp;Personal Habits</a>
+<a href="#patient_birth_details" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-time"></span>&nbsp;&nbsp;&nbsp;&nbsp;Patient Birth Details</a>
+<a href="#initial_diagnosis_details" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;&nbsp;&nbsp;&nbsp;Initial Diagnosis Details</a>
+<a href="#hospitaliztion_details" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-bed"></span>&nbsp;&nbsp;&nbsp;&nbsp;Hospitalization Details</a>
 <hr style="margin-top:5px; margin-bottom: 5px">
 <big><b>&nbsp</b></big>
 <br>
