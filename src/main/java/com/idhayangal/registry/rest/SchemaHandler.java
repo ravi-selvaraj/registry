@@ -25,6 +25,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.idhayangal.registry.common.Helper;
 import com.idhayangal.registry.objects.PatientRecord;
 import com.idhayangal.registry.worker.PatientRecordsWorker;
+import com.idhayangal.registry.worker.SchemaWorker;
 
 
 @Path("/schema")
@@ -722,7 +723,8 @@ public class SchemaHandler {
 	@GET
 	@Produces("application/json")
 	public Response getSchema() {
-			return Response.status(200).entity(schema).build();
+			//return Response.status(200).entity(schema).build();
+		return Response.status(200).entity(SchemaWorker.getSchema()).build();
 		
 	}
 }
