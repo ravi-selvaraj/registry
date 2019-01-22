@@ -52,7 +52,8 @@
     <script type="text/javascript" src="js/lib/jsonform.js"></script>
 <script src="js/main.js"></script>
 
-    
+ <link rel="stylesheet" href="css/main.css">
+ 
 <style type="text/css">
 .list {
   font-family:sans-serif;

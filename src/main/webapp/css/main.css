@@ -1,0 +1,17 @@
+div .jsonform-error-consultant_name {
+   float: left; 
+   width: 400px;
+}
+
+div .jsonform-error-s_no {
+   float: left; 
+   width: 300px;
+   padding-left: 20px;
+}
+
+div .jsonform-error-hospital_reg_no {
+   float: left; 
+   width: 300px;
+   padding-left: 20px;
+}
+
