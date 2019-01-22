@@ -11,12 +11,12 @@ div .jsonform-error-consultant_name {
 }
 div .jsonform-error-s_no {
    float: left; 
-   width: 300px;
+   width: 330px;
    padding-left: 20px;
 }
 div .jsonform-error-hospital_reg_no {
    float: left; 
-   width: 300px;
+   width: 330px;
    padding-left: 20px;
 }
 
@@ -26,12 +26,12 @@ div .jsonform-error-phone {
 }
 div .jsonform-error-email {
    float: left; 
-   width: 300px;
+   width: 330px;
    padding-left: 20px;
 }
 div .jsonform-error-gender {
    float: left; 
-   width: 300px;
+   width: 330px;
    padding-left: 20px;
 }
 
@@ -41,12 +41,12 @@ div .jsonform-error-date_of_birth {
 }
 div .jsonform-error-age {
    float: left; 
-   width: 300px;
+   width: 330px;
    padding-left: 20px;
 }
 div .jsonform-error-marital_status {
    float: left; 
-   width: 300px;
+   width: 330px;
    padding-left: 20px;
 }
 
@@ -57,7 +57,7 @@ div .jsonform-error-father_name {
 }
 div .jsonform-error-father_age {
    float: left; 
-   width: 300px;
+   width: 360px;
    padding-left: 20px;
 }
 
@@ -67,12 +67,12 @@ div .jsonform-error-father_education {
 }
 div .jsonform-error-father_occupation {
    float: left; 
-   width: 300px;
+   width: 330px;
    padding-left: 20px;
 }
 div .jsonform-error-father_income {
    float: left; 
-   width: 300px;
+   width: 330px;
    padding-left: 20px;
 }
 
@@ -82,7 +82,7 @@ div .jsonform-error-mother_name {
 }
 div .jsonform-error-mother_age {
    float: left; 
-   width: 300px;
+   width: 360px;
    padding-left: 20px;
 }
 
@@ -92,12 +92,12 @@ div .jsonform-error-mother_education {
 }
 div .jsonform-error-mother_occupation {
    float: left; 
-   width: 300px;
+   width: 330px;
    padding-left: 20px;
 }
 div .jsonform-error-mother_income {
    float: left; 
-   width: 300px;
+   width: 330px;
    padding-left: 20px;
 }
 
@@ -107,12 +107,12 @@ div .jsonform-error-religion {
 }
 div .jsonform-error-caste {
    float: left; 
-   width: 300px;
+   width: 330px;
    padding-left: 20px;
 }
 div .jsonform-error-sub_caste {
    float: left; 
-   width: 300px;
+   width: 330px;
    padding-left: 20px;
 }
 
@@ -123,11 +123,11 @@ div .jsonform-error-sibling_details {
 }
 div .jsonform-error-family_history_of_diabetes {
    float: left; 
-   width: 300px;
+   width: 330px;
    padding-left: 20px;
 }
 div .jsonform-error-sibling_history_of_diabetes {
    float: left; 
-   width: 300px;
+   width: 330px;
    padding-left: 20px;
 }
