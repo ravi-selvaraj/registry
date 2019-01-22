@@ -1,18 +1,19 @@
 fieldset {
 	width: 100%;
 }
+textarea {
+	height: 100px;
+}
 
 div .jsonform-error-consultant_name {
    float: left; 
    width: 400px;
 }
-
 div .jsonform-error-s_no {
    float: left; 
    width: 300px;
    padding-left: 20px;
 }
-
 div .jsonform-error-hospital_reg_no {
    float: left; 
    width: 300px;
@@ -23,13 +24,11 @@ div .jsonform-error-phone {
    float: left; 
    width: 400px;
 }
-
 div .jsonform-error-email {
    float: left; 
    width: 300px;
    padding-left: 20px;
 }
-
 div .jsonform-error-gender {
    float: left; 
    width: 300px;
@@ -40,14 +39,94 @@ div .jsonform-error-date_of_birth {
    float: left; 
    width: 400px;
 }
-
 div .jsonform-error-age {
    float: left; 
    width: 300px;
    padding-left: 20px;
 }
-
 div .jsonform-error-marital_status {
+   float: left; 
+   width: 300px;
+   padding-left: 20px;
+}
+
+
+div .jsonform-error-father_name {
+   float: left; 
+   width: 720px;
+}
+div .jsonform-error-father_age {
+   float: left; 
+   width: 300px;
+   padding-left: 20px;
+}
+
+div .jsonform-error-father_education {
+   float: left; 
+   width: 400px;
+}
+div .jsonform-error-father_occupation {
+   float: left; 
+   width: 300px;
+   padding-left: 20px;
+}
+div .jsonform-error-father_income {
+   float: left; 
+   width: 300px;
+   padding-left: 20px;
+}
+
+div .jsonform-error-mother_name {
+   float: left; 
+   width: 720px;
+}
+div .jsonform-error-mother_age {
+   float: left; 
+   width: 300px;
+   padding-left: 20px;
+}
+
+div .jsonform-error-mother_education {
+   float: left; 
+   width: 400px;
+}
+div .jsonform-error-mother_occupation {
+   float: left; 
+   width: 300px;
+   padding-left: 20px;
+}
+div .jsonform-error-mother_income {
+   float: left; 
+   width: 300px;
+   padding-left: 20px;
+}
+
+div .jsonform-error-religion {
+   float: left; 
+   width: 400px;
+}
+div .jsonform-error-caste {
+   float: left; 
+   width: 300px;
+   padding-left: 20px;
+}
+div .jsonform-error-sub_caste {
+   float: left; 
+   width: 300px;
+   padding-left: 20px;
+}
+
+
+div .jsonform-error-siblibng_details {
+   float: left; 
+   width: 400px;
+}
+div .jsonform-error-family_history_of_diabetes {
+   float: left; 
+   width: 300px;
+   padding-left: 20px;
+}
+div .jsonform-error-sibling_history_of_diabtes {
    float: left; 
    width: 300px;
    padding-left: 20px;
