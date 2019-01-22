@@ -19,3 +19,36 @@ div .jsonform-error-hospital_reg_no {
    padding-left: 20px;
 }
 
+div .jsonform-error-phone {
+   float: left; 
+   width: 400px;
+}
+
+div .jsonform-error-email {
+   float: left; 
+   width: 300px;
+   padding-left: 20px;
+}
+
+div .jsonform-error-gender {
+   float: left; 
+   width: 300px;
+   padding-left: 20px;
+}
+
+div .jsonform-error-date_of_birth {
+   float: left; 
+   width: 400px;
+}
+
+div .jsonform-error-age {
+   float: left; 
+   width: 300px;
+   padding-left: 20px;
+}
+
+div .jsonform-error-marital_status {
+   float: left; 
+   width: 300px;
+   padding-left: 20px;
+}
