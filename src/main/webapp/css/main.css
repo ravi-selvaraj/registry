@@ -2,7 +2,7 @@ fieldset {
 	width: 100%;
 }
 textarea {
-	height: 100px;
+	height: 100px!important;
 }
 
 div .jsonform-error-consultant_name {
@@ -117,7 +117,7 @@ div .jsonform-error-sub_caste {
 }
 
 
-div .jsonform-error-siblibng_details {
+div .jsonform-error-sibling_details {
    float: left; 
    width: 400px;
 }
@@ -126,7 +126,7 @@ div .jsonform-error-family_history_of_diabetes {
    width: 300px;
    padding-left: 20px;
 }
-div .jsonform-error-sibling_history_of_diabtes {
+div .jsonform-error-sibling_history_of_diabetes {
    float: left; 
    width: 300px;
    padding-left: 20px;
