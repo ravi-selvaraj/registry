@@ -441,3 +441,14 @@ div .jsonform-error-birth_weight_of_baby {
    width: 33%;
    padding-left: 20px;
 }
+
+div .jsonform-error-year_of_insulin_pump_start {
+   float: left; 
+   width: 50%;
+   clear: both;
+}
+div .jsonform-error-no_of_months_on_insulin_pump {
+   float: left; 
+   width: 50%;
+   padding-left: 20px;
+}
