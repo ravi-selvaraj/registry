@@ -10,7 +10,9 @@ div .jsonform-error-classical_osmotic_symptoms {
 div .jsonform-error-viral_illness_or_infection_at_diagnosis {
 	clear: both;
 }
-
+div[class$="---any_other_problem"] {
+	clear: both;
+}
 
 div .jsonform-error-consultant_name {
    float: left; 
