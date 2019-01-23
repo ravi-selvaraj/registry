@@ -192,3 +192,13 @@ function load_lookup_values(field) {
 consultants = load_lookup_values('consultants');
 hospitals = load_lookup_values('hospitals');
 
+function set_lookups()
+{
+	$("#jsonform-1-elt-consultant_name").autocomplete({
+	    source: consultants
+	});
+	
+	$("#jsonform-1-elt-hospital_name").autocomplete({
+	    source: hospitals
+	});
+}

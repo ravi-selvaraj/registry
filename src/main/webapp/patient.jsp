@@ -383,17 +383,8 @@ legend {
 	patient_id = getParameterByName("id");
 	load_patientrecord(patient_id);
 	
-	$(function() {
-		$("#jsonform-1-elt-consultant_name").autocomplete({
-		    source: consultants
-		});
-		
-		$("#jsonform-1-elt-hospital_name").autocomplete({
-		    source: hospitals
-		});
-	});
+	setTimeout(set_lookups, 1000);
 
-				</script>
   </script>			
 
 </body>
