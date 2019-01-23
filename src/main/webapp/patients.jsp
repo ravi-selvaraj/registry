@@ -109,7 +109,7 @@ input:focus {
 			<table width="100%">
 				<tr>
 					<td width=200>
-					<div class="logo" align=center ><img style="zoom:75%" src="img/logo-free.png"></div>
+					<div class="logo" align=center ><img style="zoom:75%" src="img/TNT1DR.png"></div>
 					</td>
 					<td>
 						<div id="testcasename" >
