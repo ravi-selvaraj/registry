@@ -1,3 +1,5 @@
+var consultants = [];
+var hospitals = [];
 
 function load_patientrecords() {
 	$("#processing").click();
@@ -172,3 +174,28 @@ function save_patientrecord(record)
 		}
 	});
 }
+
+function load_lookup_values(field) {
+	$
+			.ajax({
+
+				url : 'API/lookup/' + field,
+				type : 'GET',
+				success : function(data) {
+					return data;
+				},
+				error : function(request, error) {
+				}
+			});
+}
+
+consultants = load_lookup_values('consultants');
+hospitals = load_lookup_values('hospitals');
+
+$("#jsonform-1-elt-consultant_name").autocomplete({
+    source: consultants
+});
+
+$("#jsonform-1-elt-hospital_name").autocomplete({
+    source: hospitals
+});
