@@ -37,7 +37,14 @@ public class LookupHandler {
 	@Path("/{field}")
 	@Produces("application/json")
 	public Response getValues(@PathParam("field") String szField) {
-		return Response.status(200).entity(LookupWorker.getLookupValues(szField)).build();
+		ObjectMapper mapper = new ObjectMapper();
+
+		try {
+			return Response.status(200).entity(mapper.writeValueAsString(LookupWorker.getLookupValues(szField))).build();
+		} catch (JsonProcessingException e) {
+			LOG.log(Level.SEVERE, e.getMessage(), e);
+			return Response.status(500).entity(Helper.response("Internal Error : " + e.getMessage(), 500)).build();
+		}
 		
 	}
 }
