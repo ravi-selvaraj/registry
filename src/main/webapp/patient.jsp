@@ -33,7 +33,7 @@
     <script type="text/javascript" src="js/deps/opt/jsv.js"></script>
     
           <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
+  <!-- <link rel="stylesheet" href="/resources/demos/style.css">  -->
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     
@@ -383,6 +383,15 @@ legend {
 	patient_id = getParameterByName("id");
 	load_patientrecord(patient_id);
 	
+	$(function() {
+		$("#jsonform-1-elt-consultant_name").autocomplete({
+		    source: consultants
+		});
+		
+		$("#jsonform-1-elt-hospital_name").autocomplete({
+		    source: hospitals
+		});
+	}
 
 				</script>
   </script>			
