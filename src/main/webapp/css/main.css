@@ -267,3 +267,36 @@ div .jsonform-error-other_softdrinks_consumption_duration {
    width: 70%;
    padding-left: 20px;
 }
+
+div .jsonform-error-type_of_delivery {
+   float: left; 
+   width: 50%;
+   clear: both;
+}
+div .jsonform-error-birth_weight {
+   float: left; 
+   width: 50%;
+   padding-left: 20px;
+}
+
+div .jsonform-error-any_admissions_to_NICU {
+   float: left; 
+   width: 50%;
+   clear: both;
+}
+div .jsonform-error-vaccination_history_if_available {
+   float: left; 
+   width: 50%;
+   padding-left: 20px;
+}
+
+div .jsonform-error-breast_feeding_details {
+   float: left; 
+   width: 50%;
+   clear: both;
+}
+div .jsonform-error-weaning_details {
+   float: left; 
+   width: 50%;
+   padding-left: 20px;
+}
