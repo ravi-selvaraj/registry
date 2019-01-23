@@ -142,9 +142,15 @@ function save_patientrecord(record)
 	patient_data["patient_city"] = "N/A";
 	if (record["address"])
 		patient_data["patient_city"] = record["address"]["city"];
-	patient_data["patient_phone"] = record["phone"];
-	patient_data["patient_dob"] = record["date_of_birth"];
-	patient_data["patient_year_of_diagnosis"] = record["year_of_diagnosis"];
+	patient_data["patient_phone"] = "N/A";
+	if (record["phone"])
+		patient_data["patient_phone"] = record["phone"];
+	patient_data["patient_dob"] = "N/A";
+	if (record["date_of_birth"])
+		patient_data["patient_dob"] = record["date_of_birth"];
+	patient_data["patient_year_of_diagnosis"]  = "N/A";
+	if (record["year_of_diagnosis"])
+		patient_data["patient_year_of_diagnosis"] = record["year_of_diagnosis"];
 	patient_data["consultant_name"] = record["consultant_name"];
 	patient_data["patient_tags"] = "";
 

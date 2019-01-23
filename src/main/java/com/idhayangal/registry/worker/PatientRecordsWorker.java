@@ -205,6 +205,8 @@ public class PatientRecordsWorker {
 		            		patient_record.patient_id = String.valueOf(generatedKeys.getInt(1));
 		            }
 				}
+				LookupWorker.saveLookupValue("consultants", patient_record.consultant_name);
+				LookupWorker.saveLookupValue("hospitals", (String) patient_record.patient_record.get("hospital_name"));
 			}
 			catch (Exception e)
 			{

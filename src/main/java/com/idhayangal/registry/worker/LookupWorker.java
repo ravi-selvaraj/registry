@@ -65,4 +65,37 @@ public class LookupWorker {
 		return szValues;
 	}
 	
+	public static boolean saveLookupValue(String szField, String szValue)
+	{		
+		Connection connection = DBConnectionPool.getConnection();
+		Statement stmt = null;
+		if (connection != null)
+		{
+			try
+			{
+				ObjectMapper mapper = new ObjectMapper();
+				stmt = connection.createStatement();
+				int nRet = stmt.executeUpdate("INSERT INTO lookup_" + szField + " (name) VALUES (\'" + szValue.replaceAll("\'", "\'\'") + "\'");
+			}
+			catch (Exception e)
+			{
+			}
+			finally
+			{
+				try
+				{
+					if (stmt != null)
+						stmt.close();
+					if (connection != null)
+						connection.close();
+				}
+				catch (Exception e)
+				{
+					
+				}
+			}
+			
+		}		
+		return true;
+	}	
 }
