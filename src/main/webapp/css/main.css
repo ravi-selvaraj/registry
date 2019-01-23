@@ -316,3 +316,128 @@ div .jsonform-error-weaning_details {
    width: 50%;
    padding-left: 20px;
 }
+
+div .jsonform-error-weight_at_diagosis {
+   float: left; 
+   width: 33%;
+   clear: both;
+}
+div .jsonform-error-height_at_diagnois {
+   float: left; 
+   width: 33%;
+   padding-left: 20px;
+}
+div .jsonform-error-bmi_at_diagnosis {
+   float: left; 
+   width: 33%;
+   padding-left: 20px;
+}
+
+div .jsonform-error-year_of_diagnosis {
+   float: left; 
+   width: 50%;
+   clear: both;
+}
+div .jsonform-error-age_of_patient_at_diagnosis {
+   float: left; 
+   width: 50%;
+   padding-left: 20px;
+}
+
+div .jsonform-error-blood_pressure_at_diagnosis {
+   float: left; 
+   width: 50%;
+   clear: both;
+}
+div .jsonform-error-blood_pressure_at_diagnosis_second_measurement {
+   float: left; 
+   width: 50%;
+   padding-left: 20px;
+}
+
+div .jsonform-error-glucose_at_diagnosis {
+   float: left; 
+   width: 33%;
+   clear: both;
+}
+div .jsonform-error-HbA1c_at_diagnosis {
+   float: left; 
+   width: 33%;
+   padding-left: 20px;
+}
+div .jsonform-error-diabetic_ketoacidosis_at_diagnosis {
+   float: left; 
+   width: 33%;
+   padding-left: 20px;
+}
+
+div .jsonform-error-admission_at_diagnosis {
+   float: left; 
+   width: 30%;
+   clear: both;
+}
+div .jsonform-error-duration_of_hospital_stay_at_diagnosis {
+   float: left; 
+   width: 70%;
+   padding-left: 20px;
+}
+
+div .jsonform-error-c_peptide_results_at_diagnosis {
+   float: left; 
+   width: 30%;
+   clear: both;
+}
+div .jsonform-error-GAD_antibody_at_diagnosis {
+   float: left; 
+   width: 70%;
+   padding-left: 20px;
+}
+
+div .jsonform-error-type_of_insulin {
+   float: left; 
+   width: 30%;
+   clear: both;
+}
+div .jsonform-error-type_of_insulin_if_others {
+   float: left; 
+   width: 70%;
+   padding-left: 20px;
+}
+
+div .jsonform-error-any_pregnancies_with_type_1_diabetes {
+   float: left; 
+   width: 50%;
+   clear: both;
+}
+div .jsonform-error-pregnancy_delivery_method {
+   float: left; 
+   width: 50%;
+   padding-left: 20px;
+}
+
+div .jsonform-error-any_miscarriages_in_pregnancy {
+   float: left; 
+   width: 50%;
+   clear: both;
+}
+div .jsonform-error-number_of_miscarriages_in_pregnancy {
+   float: left; 
+   width: 50%;
+   padding-left: 20px;
+}
+
+div .jsonform-error-any_birth_defects_to_baby {
+   float: left; 
+   width: 33%;
+   clear: both;
+}
+div .jsonform-error-baby_birth_defect_details {
+   float: left; 
+   width: 33%;
+   padding-left: 20px;
+}
+div .jsonform-error-birth_weight_of_baby {
+   float: left; 
+   width: 33%;
+   padding-left: 20px;
+}
