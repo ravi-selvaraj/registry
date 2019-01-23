@@ -40,10 +40,10 @@
    <!--  <script src="js/deps/jquery.min.js"></script> -->
     <script src="js/deps/underscore.js"></script>
     <script src="js/deps/opt/jsv.js"></script>
-   <!--  <script src="js/deps/opt/jquery.ui.core.js"></script> -->
+   <!--  <script src="js/deps/opt/jquery.ui.core.js"></script> 
     <script src="js/deps/opt/jquery.ui.widget.js"></script>
     <script src="js/deps/opt/jquery.ui.mouse.js"></script>
-    <script src="js/deps/opt/jquery.ui.sortable.js"></script>
+    <script src="js/deps/opt/jquery.ui.sortable.js"></script> -->
     <script src="js/deps/opt/bootstrap-dropdown.js"></script>
     <script src="js/deps/opt/bootstrap-wysihtml5.js"></script>
     <script src="js/deps/opt/spectrum.js"></script>
