@@ -274,7 +274,7 @@ legend {
 <a href="#patient_demographics" style="width:95%; text-align: left; margin: 2px;" class="btn btn-med btn-success"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;&nbsp;&nbsp;Patient Demographics</a>
 <a href="#parents_details" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-th-list"></span>&nbsp;&nbsp;&nbsp;&nbsp;Parents Details</a>
 <a href="#social_factors" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-globe"></span>&nbsp;&nbsp;&nbsp;&nbsp;Social Factors</a>
-<a href="#personal_habbits" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;&nbsp;Personal Habits</a>
+<a href="#personal_habits" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;&nbsp;&nbsp;Personal Habits</a>
 <a href="#patient_birth_details" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-time"></span>&nbsp;&nbsp;&nbsp;&nbsp;Patient Birth Details</a>
 <a href="#initial_diagnosis_details" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;&nbsp;&nbsp;&nbsp;Initial Diagnosis Details</a>
 <a href="#hospitaliztion_details" style="width:95%; text-align: left; margin: 2px;"  class="btn btn-med btn-success"><span class="glyphicon glyphicon-bed"></span>&nbsp;&nbsp;&nbsp;&nbsp;Hospitalization Details</a>
