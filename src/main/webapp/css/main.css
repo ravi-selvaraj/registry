@@ -140,3 +140,88 @@ div .jsonform-error-sibling_history_of_diabetes {
    width: 33%;
    padding-left: 20px;
 }
+
+
+div .jsonform-error-education {
+   float: left; 
+   width: 50%;
+   clear: both;
+}
+div .jsonform-error-place_or_pincode_at_diagnosis {
+   float: left; 
+   width: 50%;
+   padding-left: 20px;
+}
+
+div .jsonform-error-drinking_water_source {
+   float: left; 
+   width: 50%;
+   clear: both;
+}
+div .jsonform-error-drinking_water_purification {
+   float: left; 
+   width: 50%;
+   padding-left: 20px;
+}
+
+div .jsonform-error-any_industries_nearby {
+   float: left; 
+   width: 30%;
+   clear: both;
+}
+div .jsonform-error-industries_nearby_details {
+   float: left; 
+   width: 70%;
+   padding-left: 20px;
+}
+
+div .jsonform-error-any_mobile_towers_nearby {
+   float: left; 
+   width: 30%;
+   clear: both;
+}
+div .jsonform-error-mobile_towers_nearby_details {
+   float: left; 
+   width: 70%;
+   padding-left: 20px;
+}
+
+div .jsonform-error-hours_watching_tv {
+   float: left; 
+   width: 33%;
+   clear: both;
+}
+div .jsonform-error-hours_using_mobile {
+   float: left; 
+   width: 33%;
+   padding-left: 20px;
+}
+div .jsonform-error-hours_playing {
+   float: left; 
+   width: 33%;
+   padding-left: 20px;
+}
+
+div .jsonform-error-other_activities {
+   float: left; 
+   width: 50%;
+   clear: both;
+}
+div .jsonform-error-other_illness {
+   float: left; 
+   width: 50%;
+   padding-left: 20px;
+}
+
+div .jsonform-error-other_diseases {
+   float: left; 
+   width: 50%;
+   clear: both;
+}
+div .jsonform-error-other_surgeries {
+   float: left; 
+   width: 50%;
+   padding-left: 20px;
+}
+
+
