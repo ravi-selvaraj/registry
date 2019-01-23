@@ -466,5 +466,5 @@ div[class$="---date_of_visit"] {
 div[class$="---months_since_diagnosis"] {
    float: left; 
    width: 50%;
-   clear: both;
+   padding-left: 20px;
 }
