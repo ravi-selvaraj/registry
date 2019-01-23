@@ -21,6 +21,22 @@ div .jsonform-error-hospital_reg_no {
    padding-left: 20px;
 }
 
+div .jsonform-error-alive_or_deceased {
+   float: left; 
+   width: 33%;
+   clear: both;
+}
+div .jsonform-error-cause_of_death {
+   float: left; 
+   width: 33%;
+   padding-left: 20px;
+}
+div .jsonform-error-diabetes_related_death {
+   float: left; 
+   width: 33%;
+   padding-left: 20px;
+}
+
 div .jsonform-error-phone {
    float: left; 
    width: 33%;
