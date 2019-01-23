@@ -225,4 +225,45 @@ div .jsonform-error-other_surgeries {
    padding-left: 20px;
 }
 
+div .jsonform-error-food_habits {
+   float: left; 
+   width: 25%;
+   clear: both;
+}
+div .jsonform-error-rice_consumption {
+   float: left; 
+   width: 25%;
+   padding-left: 20px;
+}
+div .jsonform-error-milk_consumption {
+   float: left; 
+   width: 25%;
+   padding-left: 20px;
+}
+div .jsonform-error-coffee_tea_consumption {
+   float: left; 
+   width: 25%;
+   padding-left: 20px;
+}
 
+div .jsonform-error-cola_consumption {
+   float: left; 
+   width: 30%;
+   clear: both;
+}
+div .jsonform-error-cola_consumption_duration {
+   float: left; 
+   width: 70%;
+   padding-left: 20px;
+}
+
+div .jsonform-error-other_softdrinks_consumption {
+   float: left; 
+   width: 30%;
+   clear: both;
+}
+div .jsonform-error-other_softdrinks_consumption_duration {
+   float: left; 
+   width: 70%;
+   padding-left: 20px;
+}
