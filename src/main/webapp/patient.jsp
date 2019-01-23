@@ -391,7 +391,7 @@ legend {
 		$("#jsonform-1-elt-hospital_name").autocomplete({
 		    source: hospitals
 		});
-	}
+	});
 
 				</script>
   </script>			
