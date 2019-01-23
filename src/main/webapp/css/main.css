@@ -31,16 +31,17 @@ div .jsonform-error-email {
    width: 33%;
    padding-left: 20px;
 }
+div .jsonform-error-date_of_birth {
+   float: left; 
+   width: 33%;
+}
+
 div .jsonform-error-gender {
    float: left; 
    width: 33%;
    padding-left: 20px;
-}
-
-div .jsonform-error-date_of_birth {
-   float: left; 
-   width: 33%;
    clear: both;
+   
 }
 div .jsonform-error-age {
    float: left; 
