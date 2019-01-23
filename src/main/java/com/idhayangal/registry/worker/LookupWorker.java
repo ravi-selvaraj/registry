@@ -75,7 +75,7 @@ public class LookupWorker {
 			{
 				ObjectMapper mapper = new ObjectMapper();
 				stmt = connection.createStatement();
-				int nRet = stmt.executeUpdate("INSERT INTO lookup_" + szField + " (name) VALUES (\'" + szValue.replaceAll("\'", "\'\'") + "\'");
+				int nRet = stmt.executeUpdate("INSERT INTO lookup_" + szField + " (name) VALUES (\'" + szValue.replaceAll("\'", "\'\'") + "\')");
 			}
 			catch (Exception e)
 			{
