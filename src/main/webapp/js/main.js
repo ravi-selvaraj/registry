@@ -172,7 +172,7 @@ function save_patientrecord(record)
 				$("#msg_header").html("Success");
 				$("#msg_body").html("Success : Patient record " + data["patient_id"] + " saved successfully.");
 				patient_id = data["patient_id"];
-				$("button#modal_close").on("click", function(){window.location = 'patient.jsp?id=' + patient_id + ';'});
+				$("button#modal_close").on("click", function(){window.location = 'patient.jsp?id=' + patient_id});
 				$("#alert").click();
 
 				
