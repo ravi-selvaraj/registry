@@ -8,6 +8,7 @@ textarea {
 div .jsonform-error-consultant_name {
    float: left; 
    width: 33%;
+   clear: both;
 }
 div .jsonform-error-s_no {
    float: left; 
@@ -23,6 +24,7 @@ div .jsonform-error-hospital_reg_no {
 div .jsonform-error-phone {
    float: left; 
    width: 33%;
+   clear: both;
 }
 div .jsonform-error-email {
    float: left; 
@@ -31,13 +33,14 @@ div .jsonform-error-email {
 }
 div .jsonform-error-gender {
    float: left; 
-   width: 23%;
+   width: 33%;
    padding-left: 20px;
 }
 
 div .jsonform-error-date_of_birth {
    float: left; 
    width: 33%;
+   clear: both;
 }
 div .jsonform-error-age {
    float: left; 
@@ -54,6 +57,7 @@ div .jsonform-error-marital_status {
 div .jsonform-error-father_name {
    float: left; 
    width: 66%;
+   clear: both;
 }
 div .jsonform-error-father_age {
    float: left; 
@@ -64,6 +68,7 @@ div .jsonform-error-father_age {
 div .jsonform-error-father_education {
    float: left; 
    width: 33%;
+   clear: both;
 }
 div .jsonform-error-father_occupation {
    float: left; 
@@ -79,6 +84,7 @@ div .jsonform-error-father_income {
 div .jsonform-error-mother_name {
    float: left; 
    width: 66%;
+   clear: both;
 }
 div .jsonform-error-mother_age {
    float: left; 
@@ -89,6 +95,7 @@ div .jsonform-error-mother_age {
 div .jsonform-error-mother_education {
    float: left; 
    width: 33%;
+   clear: both;
 }
 div .jsonform-error-mother_occupation {
    float: left; 
@@ -104,6 +111,7 @@ div .jsonform-error-mother_income {
 div .jsonform-error-religion {
    float: left; 
    width: 33%;
+   clear: both;
 }
 div .jsonform-error-caste {
    float: left; 
@@ -120,6 +128,7 @@ div .jsonform-error-sub_caste {
 div .jsonform-error-sibling_details {
    float: left; 
    width: 33%;
+   clear: both;
 }
 div .jsonform-error-family_history_of_diabetes {
    float: left; 
