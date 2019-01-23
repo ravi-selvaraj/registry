@@ -4,6 +4,13 @@ fieldset {
 textarea {
 	height: 100px!important;
 }
+div .jsonform-error-classical_osmotic_symptoms {
+	clear: both;
+}
+div .jsonform-error-viral_illness_or_infection_at_diagnosis {
+	clear: both;
+}
+
 
 div .jsonform-error-consultant_name {
    float: left; 
@@ -319,18 +326,16 @@ div .jsonform-error-weaning_details {
 
 div .jsonform-error-weight_at_diagosis {
    float: left; 
-   width: 33%;
+   width: 50%;
    clear: both;
 }
 div .jsonform-error-height_at_diagnois {
    float: left; 
-   width: 33%;
+   width: 50%;
    padding-left: 20px;
 }
 div .jsonform-error-bmi_at_diagnosis {
-   float: left; 
-   width: 33%;
-   padding-left: 20px;
+   clear: both;
 }
 
 div .jsonform-error-year_of_diagnosis {
@@ -384,12 +389,12 @@ div .jsonform-error-duration_of_hospital_stay_at_diagnosis {
 
 div .jsonform-error-c_peptide_results_at_diagnosis {
    float: left; 
-   width: 30%;
+   width: 50%;
    clear: both;
 }
 div .jsonform-error-GAD_antibody_at_diagnosis {
    float: left; 
-   width: 70%;
+   width: 50%;
    padding-left: 20px;
 }
 
