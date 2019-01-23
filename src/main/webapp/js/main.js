@@ -176,17 +176,21 @@ function save_patientrecord(record)
 }
 
 function load_lookup_values(field) {
+	ret_data = [];
 	$
 			.ajax({
 
 				url : 'API/lookup/' + field,
 				type : 'GET',
+				async: false,
 				success : function(data) {
-					return data;
+					alert(data);
+					ret_data = data;
 				},
 				error : function(request, error) {
 				}
 			});
+	return ret_data;
 }
 
 
