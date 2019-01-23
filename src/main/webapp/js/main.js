@@ -184,7 +184,6 @@ function load_lookup_values(field) {
 				type : 'GET',
 				async: false,
 				success : function(data) {
-					alert(data);
 					ret_data = data;
 				},
 				error : function(request, error) {
@@ -200,12 +199,13 @@ function set_lookups()
 	consultants = load_lookup_values('consultants');
 	hospitals = load_lookup_values('hospitals');
 	
-	alert(consultants);
 	$("#jsonform-1-elt-consultant_name").autocomplete({
-	    source: consultants
+	    source: consultants,
+	    delay: 0
 	});
 	
 	$("#jsonform-1-elt-hospital_name").autocomplete({
-	    source: hospitals
+	    source: hospitals,
+	    delay: 0
 	});
 }
