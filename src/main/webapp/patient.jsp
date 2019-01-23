@@ -2,8 +2,10 @@
 <head>
 <!-- <link rel="icon" href="img/avatar.ico" type="image/x-icon">  
 <link rel="shortcut icon" href="img/avatar.ico" type="image/x-icon">  -->
+<link rel="shortcut icon" href="img/TNT1DR.ico" type="image/x-icon">
+<link rel="icon" href="img/TNT1DR.ico" type="image/x-icon">
 
-<title>Idhayangal : Patients Details</title>
+<title>Tamil Nadu Type 1 Diabetes : Patients Details</title>
 <meta charset="UTF-8">
 <meta name="google" content="notranslate">
 <meta http-equiv="Content-Language" content="en">
@@ -236,7 +238,7 @@ legend {
 			<table width="100%">
 				<tr>
 					<td width=200>
-					<div class="logo" align=center ><img style="zoom:75%" src="img/logo-free.png"></div>
+					<div class="logo" align=center ><img style="zoom:80%" src="img/TNT1DR.png"></div>
 					</td>
 					<td>
 						<div id="testcasename" >
