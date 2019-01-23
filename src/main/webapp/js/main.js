@@ -42,7 +42,7 @@ function load_patientrecords() {
 					$("#msg_header").html("Failure");
 					$("#msg_body").html(
 							request.status + ":" + request.responseText);
-					$("#model_close").off("click");
+					$("button#model_close").off("click");
 					$("#alert").click();
 				}
 			});
@@ -68,7 +68,7 @@ function load_patientrecorddata(record) {
 					$("#msg_header").html("Failure");
 					$("#msg_body").html(
 							request.status + ":" + request.responseText);
-					$("#model_close").off("click");
+					$("button#model_close").off("click");
 					$("#alert").click();
 				}
 			});
@@ -115,7 +115,7 @@ function load_patientrecord(patient_id) {
 					$("#msg_header").html("Failure");
 					$("#msg_body").html(
 							"Error" + ":" + "Failed to load the schema");
-					$("#model_close").off("click");
+					$("button#model_close").off("click");
 					$("#alert").click();
 				}
 			});
@@ -172,7 +172,7 @@ function save_patientrecord(record)
 				$("#msg_header").html("Success");
 				$("#msg_body").html("Success : Patient record " + data["patient_id"] + " saved successfully.");
 				patient_id = data["patient_id"];
-				$("#model_close").on("click", "javascript:window.location = 'patient.jsp?id=" + patient_id + ";'");
+				$("button#model_close").on("click", function(){window.location = 'patient.jsp?id=' + patient_id + ';'});
 				$("#alert").click();
 
 				
@@ -183,7 +183,7 @@ function save_patientrecord(record)
 			$("#msg_header").html("Failure");
 			$("#msg_body").html(
 					request.status + ":" + request.responseText);
-			$("#model_close").off("click");
+			$("button#model_close").off("click");
 			$("#alert").click();
 		}
 	});
