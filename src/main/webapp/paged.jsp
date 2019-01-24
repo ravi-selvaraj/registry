@@ -150,6 +150,7 @@ input:focus {
 		<div class="w3-sidebar w3-bar-block w3-light-grey w3-card"
 			style="width: -webkit-fill-available; padding: 50px; position: relative; overflow: scroll">
 			
+<div id="pagination-container"></div>
 <div id="users" >
   <input class="search" style="display:none" "size=100 placeholder="Search" />
 
@@ -257,7 +258,7 @@ input:focus {
 
 	<script>
 
-	$('#users').pagination({
+	$('#pagination-container').pagination({
 	    dataSource: 'API/patients?active=false',
 	    locator: 'items',
 	    totalNumberLocator: function(response) {
@@ -270,8 +271,8 @@ input:focus {
 	        }
 	    },
 	    callback: function(data, pagination) {
-	        var szhtml = display_records(data)
-	        dataContainer.html(szhtml);
+	        var szhtml = display_records(data);
+	        $('#users').html(szhtml);
 	    }
 	})			
 
