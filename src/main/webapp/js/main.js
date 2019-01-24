@@ -12,7 +12,7 @@ function load_patientrecords() {
 					$("#doneprocessing").click();
 					tc_counter = 1
 					Object.keys(data.items.patientrecords).forEach(function(key) {
-						tc_data = data.patientrecords[key];
+						tc_data = data.items.patientrecords[key];
 
 						str = "<tr>";
 						str += "<td class='item sno'>" + tc_counter + ".</td>";
