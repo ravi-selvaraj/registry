@@ -122,8 +122,10 @@ public class PatientRecordsWorker {
 		}
 		HashMap hRet = new HashMap();
 		hRet.put("totalCount", new Integer(nTotalCount));
-		hRet.put("pageSize", new Integer(szPageSize));
-		hRet.put("pageNumber", new Integer(szPageNumber));
+		if (szPageSize != null)
+			hRet.put("pageSize", new Integer(szPageSize));
+		if (szPageNumber != null)
+			hRet.put("pageNumber", new Integer(szPageNumber));
 		hRet.put("items", PatientRecords);
 		
 		return hRet;
