@@ -22,8 +22,9 @@ function display_records(patientrecords)
 	     <tbody class="list">';
 
 		tc_counter = 1
-		Object.keys(patientrecords).forEach(function(key) {
-			tc_data = patientrecords[key];
+		//Object.keys(patientrecords).forEach(function(key) {
+		for (var i = 0; i < patientrecords.length; i++) {
+			tc_data = patientrecords[i];
 
 			str = "<tr>";
 			str += "<td class='item sno'>" + tc_counter + ".</td>";
@@ -40,7 +41,7 @@ function display_records(patientrecords)
 			//		str)
 			szhtml += str;
 			tc_counter = tc_counter + 1;
-		});
+		}
 
 		var options = {
 				  valueNames: [ 'tcid', 'tcname', 'tcdob', 'tctags', 'tccity', 'tcphone', 'tcyod' ]
@@ -63,7 +64,7 @@ function load_patientrecords() {
 				success : function(data) {
 					$("#doneprocessing").click();
 
-					szhtml = display_records(data.items.patientrecords);
+					szhtml = display_records(data.items);
 					$("#users").html(szhtml);
 
 				},

@@ -41,7 +41,8 @@ public class PatientRecordsWorker {
 	
 	public static HashMap getPatientRecords(boolean bActive, List<String> tags, String szPageSize, String szPageNumber, String szSearch)
 	{
-		PatientRecords PatientRecords = new PatientRecords();
+		//PatientRecords PatientRecords = new PatientRecords();
+		ArrayList<PatientRecord> items = new ArrayList<PatientRecord>();
 		int nTotalCount = 0;
 		Connection connection = DBConnectionPool.getConnection();
 		Statement stmt = null;
@@ -94,13 +95,15 @@ public class PatientRecordsWorker {
 					tc.patient_year_of_diagnosis = rs.getString("patient_year_of_diagnosis").trim();
 					tc.patient_record = (JSONObject) parser.parse(rs.getString("patient_record").trim());
 					
-				    PatientRecords.patientrecords.put(rs.getString("patient_id").trim(), tc);
+				    //PatientRecords.patientrecords.put(rs.getString("patient_id").trim(), tc);
+				    items.add(tc);
 				}
 			}
 			catch (Exception e)
 			{
 				LOG.log(Level.SEVERE, e.getMessage(), e);
-				PatientRecords = new PatientRecords();
+				//PatientRecords = new PatientRecords();
+				items = new ArrayList<PatientRecord>();
 				nTotalCount = 0;
 			}
 			finally
@@ -126,7 +129,7 @@ public class PatientRecordsWorker {
 			hRet.put("pageSize", new Integer(szPageSize));
 		if (szPageNumber != null)
 			hRet.put("pageNumber", new Integer(szPageNumber));
-		hRet.put("items", PatientRecords);
+		hRet.put("items", items);
 		
 		return hRet;
 	}
