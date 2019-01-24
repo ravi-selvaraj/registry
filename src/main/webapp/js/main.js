@@ -11,7 +11,7 @@ function load_patientrecords() {
 				success : function(data) {
 					$("#doneprocessing").click();
 					tc_counter = 1
-					Object.keys(data.patientrecords).forEach(function(key) {
+					Object.keys(data.items.patientrecords).forEach(function(key) {
 						tc_data = data.patientrecords[key];
 
 						str = "<tr>";
