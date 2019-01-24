@@ -259,7 +259,7 @@ input:focus {
 
 	$('#users').pagination({
 	    dataSource: 'API/patients?active=false',
-	    locator: 'items',
+	    locator: 'items.patientrecords',
 	    totalNumberLocator: function(response) {
 	    		return response.totalCount;
 	    },
