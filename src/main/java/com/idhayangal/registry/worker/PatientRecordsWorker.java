@@ -34,14 +34,15 @@ public class PatientRecordsWorker {
 				
 	}
 	
-	public static PatientRecords getPatientRecords()
+	public static HashMap getPatientRecords()
 	{
-		return getPatientRecords(null);
+		return getPatientRecords(true, null, null, null, null);
 	}
 	
-	public static PatientRecords getPatientRecords(List<String> tags)
+	public static HashMap getPatientRecords(boolean bActive, List<String> tags, String szPageSize, String szPageNumber, String szSearch)
 	{
 		PatientRecords PatientRecords = new PatientRecords();
+		int nTotalCount = 0;
 		Connection connection = DBConnectionPool.getConnection();
 		Statement stmt = null;
 		ResultSet rs = null;
@@ -50,7 +51,12 @@ public class PatientRecordsWorker {
 			try
 			{
 				stmt = connection.createStatement();
-				String sql = "SELECT patient_id, patient_record, patient_name, patient_dob, patient_city, patient_year_of_diagnosis, patient_phone, patient_record->'patient_record'->'consultant_name' as \"consultant_name\", patient_tags from patient_records where active = true ";
+				String sql_columns = "patient_id, patient_record, patient_name, patient_dob, patient_city, patient_year_of_diagnosis, patient_phone, patient_record->'patient_record'->'consultant_name' as \\\"consultant_name\\\", patient_tags";
+				String sql = "SELECT ##COLS## from patient_records where active = " + bActive + " ";
+				if (szSearch != null)
+				{
+					sql += " and patient_record::text like '%" + szSearch + "%' ";
+				}
 				if (tags != null)
 				{
 					sql += " and patient_record->\'tags\' @> ALL (ARRAY [";
@@ -59,7 +65,19 @@ public class PatientRecordsWorker {
 						sql += "\'\"" + attr + "\"\',";
 					}
 					sql = sql.substring(0, sql.length() - 1);
-					sql += "]::jsonb[])";
+					sql += "]::jsonb[]) ";
+				}
+				nTotalCount = getCount(sql.replace("##COLS##", "count(*)"));
+				
+				sql = sql.replace("##COLS##", sql_columns);
+				sql += " order by patient_id asc ";
+				
+				if ((szPageSize != null) && (szPageNumber != null))
+				{
+					int nPageNumber = Integer.valueOf(szPageNumber);
+					int nPageSize = Integer.valueOf(szPageSize);
+					sql += " offset " + ((nPageNumber - 1) * nPageSize);
+					sql += " limit " + nPageSize;
 				}
 				rs = stmt.executeQuery(sql);
 				JSONParser parser = new JSONParser(); 
@@ -83,6 +101,7 @@ public class PatientRecordsWorker {
 			{
 				LOG.log(Level.SEVERE, e.getMessage(), e);
 				PatientRecords = new PatientRecords();
+				nTotalCount = 0;
 			}
 			finally
 			{
@@ -101,9 +120,55 @@ public class PatientRecordsWorker {
 				}
 			}
 		}
-		return PatientRecords;
+		HashMap hRet = new HashMap();
+		hRet.put("totalCount", new Integer(nTotalCount));
+		hRet.put("pageSize", new Integer(szPageSize));
+		hRet.put("pageNumber", new Integer(szPageNumber));
+		hRet.put("items", PatientRecords);
+		
+		return hRet;
 	}
 	
+	private static int getCount(String sql) {
+		Connection connection = DBConnectionPool.getConnection();
+		Statement stmt = null;
+		ResultSet rs = null;
+		int nCount = 0;
+		if (connection != null)
+		{
+			try
+			{
+				stmt = connection.createStatement();
+				rs = stmt.executeQuery(sql);
+				if (rs.next()) {
+					nCount = rs.getInt(1);
+				}
+			}
+			catch (Exception e)
+			{
+				LOG.log(Level.SEVERE, e.getMessage(), e);
+				nCount = 0;
+			}
+			finally
+			{
+				try
+				{
+					if (rs != null)
+						rs.close();
+					if (stmt != null)
+						stmt.close();
+					if (connection != null)
+						connection.close();
+				}
+				catch (Exception e)
+				{
+					
+				}
+			}
+		}
+		return nCount;
+	}
+
 	public static PatientRecord getPatientRecord(String id)
 	{
 		PatientRecord tc = new PatientRecord();
