@@ -270,7 +270,7 @@ input:focus {
 	        }
 	    },
 	    callback: function(data, pagination) {
-	        var szhtml = display_records(data.items)
+	        var szhtml = display_records(data)
 	        dataContainer.html(szhtml);
 	    }
 	})			
