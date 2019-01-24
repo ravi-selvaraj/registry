@@ -51,7 +51,7 @@ public class PatientRecordsWorker {
 			try
 			{
 				stmt = connection.createStatement();
-				String sql_columns = "patient_id, patient_record, patient_name, patient_dob, patient_city, patient_year_of_diagnosis, patient_phone, patient_record->'patient_record'->'consultant_name' as \\\"consultant_name\\\", patient_tags";
+				String sql_columns = "patient_id, patient_record, patient_name, patient_dob, patient_city, patient_year_of_diagnosis, patient_phone, patient_record->'patient_record'->'consultant_name' as \"consultant_name\", patient_tags";
 				String sql = "SELECT ##COLS## from patient_records where active = " + bActive + " ";
 				if (szSearch != null)
 				{
