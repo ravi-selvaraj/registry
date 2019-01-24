@@ -50,7 +50,7 @@ function display_records(patientrecords)
 
 	   szhtml += ' </tbody> </table>';
 	   
-	   $("#users").html(szhtml);
+	   return szhtml;
 }
 
 function load_patientrecords() {
@@ -63,7 +63,8 @@ function load_patientrecords() {
 				success : function(data) {
 					$("#doneprocessing").click();
 
-					display_records(data.items.patientrecords);
+					szhtml = display_records(data.items.patientrecords);
+					$("#users").html(szhtml);
 
 				},
 				error : function(request, error) {
