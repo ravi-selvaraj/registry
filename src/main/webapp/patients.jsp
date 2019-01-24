@@ -150,7 +150,7 @@ input:focus {
 			style="width: -webkit-fill-available; padding: 50px; position: relative; overflow: scroll">
 			
 <div id="users" >
-  <input class="search" size=100 placeholder="Search" />
+  <input class="search" style="display:none" "size=100 placeholder="Search" />
 
   <table>
     <!-- IMPORTANT, class="list" have to be at tbody -->

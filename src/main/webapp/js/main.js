@@ -1,6 +1,58 @@
 var consultants = [];
 var hospitals = [];
 
+function display_records(patientrecords)
+{
+	  szhtml = '<input class="search" style="display:none" "size=100 placeholder="Search" />';
+	  szhtml += ' \
+	  	  <table> \
+	    <tbody class="list1"> \
+	    <tr> \
+	        <th class="item" style="width: 50px"><b>S.No</b></th> \
+	        <th class="item" style="width: 200px"><b>Patient ID</b></th> \
+	        <th class="item" style="width: 250px"><b>Name</b></th> \
+	        <th class="item" style="width: 300px"><b>DOB</b></th> \
+	        <th class="item" style="width: 200px"><b>City</b></th> \
+	        <th class="item" style="width: 200px"><b>Phone</b></th> \
+	        <th class="item" style="width: 200px"><b>Year of Diagnosis</b></th> \
+	        <th class="item" style="width: 200px"><b>Consultant Name</b></th> \
+	        <th class="item" style="width: 60px"><b></b></th> \
+	      </tr> \
+	      </tbody> \
+	     <tbody class="list">';
+
+		tc_counter = 1
+		Object.keys(patientrecords).forEach(function(key) {
+			tc_data = patientrecords[key];
+
+			str = "<tr>";
+			str += "<td class='item sno'>" + tc_counter + ".</td>";
+			str += '<td class="item tcid">' + tc_data.patient_id + '</td>';
+			str += '<td class="item tcname">' + tc_data.patient_name + '</td>';
+			str += '<td class="item tcdob">' + tc_data.patient_dob + '</td>';	
+			str += '<td class="item tccity">' + tc_data.patient_city + '</td>';	
+			str += '<td class="item tcphone">' + tc_data.patient_phone + '</td>';	
+			str += '<td class="item tcyod">' + tc_data.patient_year_of_diagnosis + '</td>';	
+			str += '<td class="item tctags">' + tc_data.consultant_name + '</td>';	
+			str += '<td class="item tcedit"><a target=_blank href="./patient.jsp?id=' + tc_data.patient_id + '" class="btn btn-sm btn-primary" id="newtestcase">Edit&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-pencil"></span></a></td>';
+			str += '</tr>';
+			//$(".list").append(
+			//		str)
+			szhtml += str;
+			tc_counter = tc_counter + 1;
+		});
+
+		var options = {
+				  valueNames: [ 'tcid', 'tcname', 'tcdob', 'tctags', 'tccity', 'tcphone', 'tcyod' ]
+				};
+
+				var userList = new List('users', options);
+
+	   szhtml += ' </tbody> </table>';
+	   
+	   $("#users").html(szhtml);
+}
+
 function load_patientrecords() {
 	$("#processing").click();
 	$
@@ -10,31 +62,8 @@ function load_patientrecords() {
 				type : 'GET',
 				success : function(data) {
 					$("#doneprocessing").click();
-					tc_counter = 1
-					Object.keys(data.items.patientrecords).forEach(function(key) {
-						tc_data = data.items.patientrecords[key];
 
-						str = "<tr>";
-						str += "<td class='item sno'>" + tc_counter + ".</td>";
-						str += '<td class="item tcid">' + tc_data.patient_id + '</td>';
-						str += '<td class="item tcname">' + tc_data.patient_name + '</td>';
-						str += '<td class="item tcdob">' + tc_data.patient_dob + '</td>';	
-						str += '<td class="item tccity">' + tc_data.patient_city + '</td>';	
-						str += '<td class="item tcphone">' + tc_data.patient_phone + '</td>';	
-						str += '<td class="item tcyod">' + tc_data.patient_year_of_diagnosis + '</td>';	
-						str += '<td class="item tctags">' + tc_data.consultant_name + '</td>';	
-						str += '<td class="item tcedit"><a target=_blank href="./patient.jsp?id=' + tc_data.patient_id + '" class="btn btn-sm btn-primary" id="newtestcase">Edit&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-pencil"></span></a></td>';
-						str += '</tr>';
-						$(".list").append(
-								str)
-						tc_counter = tc_counter + 1;
-					});
-
-					var options = {
-							  valueNames: [ 'tcid', 'tcname', 'tcdob', 'tctags', 'tccity', 'tcphone', 'tcyod' ]
-							};
-
-							var userList = new List('users', options);
+					display_records(data.items.patientrecords);
 
 				},
 				error : function(request, error) {
