@@ -262,12 +262,12 @@ input:focus {
 			//load_patientrecords();
 			
 				$('#pagination-container').pagination({
-	    dataSource: 'API/patients?active=false',
+	    dataSource: 'API/patients?active=true',
 	    locator: 'items',
 	    totalNumberLocator: function(response) {
 	    		return response.totalCount;
 	    },
-	    pageSize: 5,
+	    pageSize: 25,
 	    ajax: {
 	        beforeSend: function() {
 	            //dataContainer.html('Loading data from flickr.com ...');
