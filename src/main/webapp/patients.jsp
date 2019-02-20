@@ -149,6 +149,7 @@ input:focus {
 		<div class="w3-sidebar w3-bar-block w3-light-grey w3-card"
 			style="width: -webkit-fill-available; padding: 50px; position: relative; overflow: scroll">
 			
+<div id="pagination-container"></div>
 <div id="users" >
   <input class="search" style="display:none" "size=100 placeholder="Search" />
 
@@ -256,7 +257,25 @@ input:focus {
 
 	<script>
 
-			load_patientrecords();
+			//load_patientrecords();
+			
+				$('#pagination-container').pagination({
+	    dataSource: 'API/patients?active=false',
+	    locator: 'items',
+	    totalNumberLocator: function(response) {
+	    		return response.totalCount;
+	    },
+	    pageSize: 5,
+	    ajax: {
+	        beforeSend: function() {
+	            //dataContainer.html('Loading data from flickr.com ...');
+	        }
+	    },
+	    callback: function(data, pagination) {
+	        var szhtml = display_records(data);
+	        $('#users').html(szhtml);
+	    }
+	})			
 			
 
 						</script>
