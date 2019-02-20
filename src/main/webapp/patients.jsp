@@ -21,10 +21,12 @@
 
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
+<script src="js/deps/pagination.min.js"></script>
 
 <script src="js/main.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-
+<link rel="stylesheet"
+	href="css/pagination.css">
 <style type="text/css">
 .list {
   font-family:sans-serif;
