@@ -274,7 +274,7 @@ input:focus {
 	        }
 	    },
 	    callback: function(data, pagination) {
-	        var szhtml = display_records(data);
+	        var szhtml = display_records(data, pagination);
 	        $('#users').html(szhtml);
 	    }
 	})			

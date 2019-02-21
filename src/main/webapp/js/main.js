@@ -1,8 +1,11 @@
 var consultants = [];
 var hospitals = [];
 
-function display_records(patientrecords)
+function display_records(patientrecords, pagination)
 {
+	seed = 0;
+	if (pagination)
+		seed = (pagination.pageNumber - 1) * pagination.pageSize;
 	  szhtml = '<input class="search" style="display:none" "size=100 placeholder="Search" />';
 	  szhtml += ' \
 	  	  <table> \
@@ -21,7 +24,7 @@ function display_records(patientrecords)
 	      </tbody> \
 	     <tbody class="list">';
 
-		tc_counter = 1
+		tc_counter = 1 + seed;
 		//Object.keys(patientrecords).forEach(function(key) {
 		for (var i = 0; i < patientrecords.length; i++) {
 			tc_data = patientrecords[i];
@@ -64,7 +67,7 @@ function load_patientrecords() {
 				success : function(data) {
 					$("#doneprocessing").click();
 
-					szhtml = display_records(data.items);
+					szhtml = display_records(data.items, null);
 					$("#users").html(szhtml);
 
 				},
