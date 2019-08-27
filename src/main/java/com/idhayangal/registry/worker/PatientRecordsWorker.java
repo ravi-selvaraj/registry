@@ -300,7 +300,45 @@ public class PatientRecordsWorker {
 			
 		}		
 		return true;
-	}	
+	}
+	
+	public static boolean deleteSoftPatientRecord(String patientId)
+	{		
+		Connection connection = DBConnectionPool.getConnection();
+		Statement stmt = null;
+		if (connection != null)
+		{
+			try
+			{
+				ObjectMapper mapper = new ObjectMapper();
+				stmt = connection.createStatement();
+				int nRet = stmt.executeUpdate("update patient_records set active = false where patient_id = \'" +  patientId + "\'");
+				if (nRet == 0)
+					return false;
+			}
+			catch (Exception e)
+			{
+				LOG.log(Level.SEVERE, e.getMessage(), e);
+				return false;
+			}
+			finally
+			{
+				try
+				{
+					if (stmt != null)
+						stmt.close();
+					if (connection != null)
+						connection.close();
+				}
+				catch (Exception e)
+				{
+					
+				}
+			}
+			
+		}		
+		return true;
+	}
 	
 	public static boolean deletePatientRecord(String patientId)
 	{		

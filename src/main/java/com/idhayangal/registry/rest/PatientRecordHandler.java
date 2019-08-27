@@ -93,6 +93,20 @@ public class PatientRecordHandler {
 	@DELETE
 	@Path("/{id}")
 	@Produces("application/json")
+	public Response delSoftTestCase(@PathParam("id") String id) {
+		ObjectMapper mapper = new ObjectMapper();
+
+		if (PatientRecordsWorker.deleteSoftPatientRecord(id) == true)
+		{
+			return Response.status(200).entity(Helper.response("Patient Record deleted", 200)).build();
+
+		}
+		return Response.status(404).entity(Helper.response("Patient Record not found", 404)).build();
+	}
+	
+	@DELETE
+	@Path("/hard/{id}")
+	@Produces("application/json")
 	public Response delTestCase(@PathParam("id") String id) {
 		ObjectMapper mapper = new ObjectMapper();
 
