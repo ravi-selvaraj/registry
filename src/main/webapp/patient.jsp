@@ -261,7 +261,7 @@ legend {
 					</td>
 					<td align=right>
 					<a
-						href="javascript:$('form').submit();" target="_blank"
+						href="javascript:$('form').submit();" 
 						class="btn btn-lg btn-primary"><span
 							class="glyphicon glyphicon-floppy-disk"></span>&nbsp;&nbsp;&nbsp;&nbsp;Save Patient Details</a>
 					</td>
